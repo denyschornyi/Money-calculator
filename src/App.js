@@ -1,6 +1,8 @@
 import React from 'react';
 
-import Total from './components/Total/Total'
+import Total from './components/Total/Total';
+import History from './components/History/History';
+import Operation from './components/Operation/Operation';
 
 function App() {
   return (
@@ -15,25 +17,7 @@ function App() {
 
            <Total />
 
-          <section className="history">
-
-            <h3>Expenses history</h3>
-
-            <ul className="history__list">
-
-                <li className="history__item history__item-plus">Get job paycheck
-                    <span className="history__money">+3000 $</span>
-                    <button className="history__delete">x</button>
-                </li>
-
-                <li className="history__item  history__item-minus">Paid debt
-                    <span className="history__money">-1000 $</span>
-                    <button className="history__delete">x</button>
-                </li>
-                
-            </ul>
-
-        </section>
+          <History/>
 
         <section className="operation">
             <h3>New transaction</h3>
