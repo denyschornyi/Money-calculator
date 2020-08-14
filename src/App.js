@@ -1,12 +1,9 @@
 import React from 'react';
 
-function Test(){
-  return <button>Hello</button>
-}
 
 function App() {
   return (
-    <Test/>
+    <h1>Hey</h1>
   );
 }
 
