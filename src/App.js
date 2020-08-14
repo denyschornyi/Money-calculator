@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Test(){
-  return React.createElement('button', null, 'Hello world');
+  return <button>Hello</button>
 }
 
 function App() {
