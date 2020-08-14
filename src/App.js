@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Total from './components/Total/Total'
+
 function App() {
   return (
     <React.Fragment>
@@ -11,28 +13,7 @@ function App() {
       <main>
         <div className="container">
 
-          <section className="total">
-              <header className="total__header">
-                  <h3>Recent transation</h3>
-                  <p className="total__balance">0 $</p>
-              </header>
-
-              <div className="total__main">
-                  <div className="total__main-item total__income">
-                      <h4>Income</h4>
-                      <p className="total__money total__money-income">
-                          +0 $
-                      </p>
-                  </div>
-
-                  <div className="total__main-item total__expenses">
-                      <h4>Expenses</h4>
-                      <p className="total__money total__money-expenses">
-                          -0 $
-                      </p>
-                  </div>
-              </div>
-          </section> 
+           <Total />
 
           <section className="history">
 
