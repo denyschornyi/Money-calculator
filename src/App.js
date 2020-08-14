@@ -1,9 +1,12 @@
 import React from 'react';
-import './App.css';
+
+function Test(){
+  return React.createElement('button', null, 'Hello world');
+}
 
 function App() {
   return (
-    <h1>Hello world</h1>
+    <Test/>
   );
 }
 
