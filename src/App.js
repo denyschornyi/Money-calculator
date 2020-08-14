@@ -16,6 +16,7 @@ function App() {
                   <h3>Recent transation</h3>
                   <p className="total__balance">0 $</p>
               </header>
+
               <div className="total__main">
                   <div className="total__main-item total__income">
                       <h4>Income</h4>
@@ -23,6 +24,7 @@ function App() {
                           +0 $
                       </p>
                   </div>
+
                   <div className="total__main-item total__expenses">
                       <h4>Expenses</h4>
                       <p className="total__money total__money-expenses">
@@ -33,8 +35,11 @@ function App() {
           </section> 
 
           <section className="history">
+
             <h3>Expenses history</h3>
+
             <ul className="history__list">
+
                 <li className="history__item history__item-plus">Get job paycheck
                     <span className="history__money">+3000 $</span>
                     <button className="history__delete">x</button>
@@ -44,7 +49,9 @@ function App() {
                     <span className="history__money">-1000 $</span>
                     <button className="history__delete">x</button>
                 </li>
+                
             </ul>
+
         </section>
 
         <section className="operation">
