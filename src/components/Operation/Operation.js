@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Operation({addTransaction}){
+export default function Operation({addTransaction, addDescription, addAmount}){
     return(
         <section className="operation">
             <h3>New transaction</h3>
@@ -11,6 +11,7 @@ export default function Operation({addTransaction}){
                         type="text"
                         className="operation__fields operation__name" 
                         placeholder="Operation name" 
+                        onChange={addDescription}                   
                     />
                 </label>
                 <label>
@@ -18,6 +19,7 @@ export default function Operation({addTransaction}){
                          type="number" 
                          className="operation__fields operation__amount" 
                          placeholder="Enter amount"
+                         onChange={addAmount}
                     />
                 </label>
                 

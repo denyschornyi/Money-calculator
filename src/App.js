@@ -6,8 +6,14 @@ import Operation from './components/Operation/Operation';
 
 class App extends Component{
 
-  state = {
-    transaction: []
+  constructor(){
+    super();
+    this.state = {
+      transaction: [],
+      description: '',
+      amount: ''
+    }
+    this.addAmount = this.addAmount.bind(this);
   }
 
   addTransaction(add) {
@@ -16,6 +22,11 @@ class App extends Component{
       description: this.state.description,
       amount: this.state.amount
     }
+  }
+
+  addDescription(e){}
+  addAmount(e){
+    this.setState({amount: e.target.value})
   }
 
   render(){
@@ -30,7 +41,10 @@ class App extends Component{
           <div className="container">
               <Total />
               <History/>
-              <Operation addTransaction={this.addTransaction}/>
+              <Operation 
+                addTransaction={this.addTransaction}
+                addDescription={this.addDescription}
+                addAmount={this.addAmount}/>
           </div>
         </main>
       </React.Fragment>
