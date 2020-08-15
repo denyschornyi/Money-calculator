@@ -10,11 +10,11 @@ class App extends Component{
     transaction: []
   }
 
-  addTransaction() {
+  addTransaction(add) {
     const transaction = {
       id: `cmr${(+new Date).toString(16)}`,
-      description: '',
-      amount: ' '
+      description: this.state.description,
+      amount: this.state.amount
     }
   }
 
@@ -30,7 +30,7 @@ class App extends Component{
           <div className="container">
               <Total />
               <History/>
-              <Operation/>
+              <Operation addTransaction={this.addTransaction}/>
           </div>
         </main>
       </React.Fragment>
